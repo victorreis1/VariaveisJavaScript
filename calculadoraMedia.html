@@ -7,15 +7,21 @@
 </head>
 <body>
     <script>
-        let n1 = parseFloat(prompt("Digite sua n1"))
-        let n2 = parseFloat(prompt("Digite sua n2"))
-        let n3 = parseFloat(prompt("Digite sua n3"))
-        let n4 = parseFloat(prompt("Digite sua n4"))
-        let media = (n1+n2+n3+n4)/4
+        let n1, n2, n3, n4, media;
+            n1 = parseFloat(prompt("Digite sua n1"))
+            n2 = parseFloat(prompt("Digite sua n2"))
+            n3 = parseFloat(prompt("Digite sua n3"))
+            n4 = parseFloat(prompt("Digite sua n4"))
+            media = (n1+n2+n3+n4)/4
 
-        alert("Média "+media+" de suas notas")
-
-        alert(media.tofixed(2))
+           if (media <= 4){
+              alert("Sua média é "+media.toFixed(2)+" você foi REPROVADO!!!")
+           }  else if (media >= 6) {
+              alert("Sua média é "+media.toFixed(2)+" você foi APROVADO!!!")
+           } else {
+               alert("Sua média é "+media.toFixed(2)+" você está em Recuperação!!!")
+           }
+      
     </script>
     
 </body>
